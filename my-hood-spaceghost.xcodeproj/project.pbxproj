@@ -12,16 +12,24 @@
 		D6071BCF1B83115000515B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6071BCD1B83115000515B55 /* Main.storyboard */; };
 		D6071BD11B83115000515B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6071BD01B83115000515B55 /* Assets.xcassets */; };
 		D6071BD41B83115000515B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6071BD21B83115000515B55 /* LaunchScreen.storyboard */; };
+		D6071BDD1B8311BC00515B55 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6071BDC1B8311BC00515B55 /* Post.swift */; };
+		D6071BE01B8317A000515B55 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6071BDF1B8317A000515B55 /* PostCell.swift */; };
+		D6071BE31B8323DA00515B55 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6071BE21B8323DA00515B55 /* AddPostVC.swift */; };
+		D6071BE61B832CF200515B55 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6071BE51B832CF200515B55 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D6071BC61B83115000515B55 /* my-hood-devslopes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-devslopes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6071BC61B83115000515B55 /* my-hood-spaceghost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-spaceghost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6071BC91B83115000515B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6071BCB1B83115000515B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6071BCE1B83115000515B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6071BD01B83115000515B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6071BD31B83115000515B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6071BD51B83115000515B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6071BDC1B8311BC00515B55 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D6071BDF1B8317A000515B55 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D6071BE21B8323DA00515B55 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		D6071BE51B832CF200515B55 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		D6071BBD1B83115000515B55 = {
 			isa = PBXGroup;
 			children = (
-				D6071BC81B83115000515B55 /* my-hood-devslopes */,
+				D6071BC81B83115000515B55 /* my-hood */,
 				D6071BC71B83115000515B55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +54,67 @@
 		D6071BC71B83115000515B55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6071BC61B83115000515B55 /* my-hood-devslopes.app */,
+				D6071BC61B83115000515B55 /* my-hood-spaceghost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6071BC81B83115000515B55 /* my-hood-devslopes */ = {
+		D6071BC81B83115000515B55 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				D6071BE41B832CDF00515B55 /* Services */,
+				D6071BDB1B8311A900515B55 /* Model */,
+				D6071BDE1B83177900515B55 /* View */,
+				D6071BE11B8323A000515B55 /* Controller */,
 				D6071BC91B83115000515B55 /* AppDelegate.swift */,
-				D6071BCB1B83115000515B55 /* ViewController.swift */,
-				D6071BCD1B83115000515B55 /* Main.storyboard */,
 				D6071BD01B83115000515B55 /* Assets.xcassets */,
-				D6071BD21B83115000515B55 /* LaunchScreen.storyboard */,
 				D6071BD51B83115000515B55 /* Info.plist */,
 			);
+			name = "my-hood";
 			path = "my-hood-devslopes";
+			sourceTree = "<group>";
+		};
+		D6071BDB1B8311A900515B55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6071BDC1B8311BC00515B55 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D6071BDE1B83177900515B55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6071BD21B83115000515B55 /* LaunchScreen.storyboard */,
+				D6071BCD1B83115000515B55 /* Main.storyboard */,
+				D6071BDF1B8317A000515B55 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D6071BE11B8323A000515B55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6071BCB1B83115000515B55 /* ViewController.swift */,
+				D6071BE21B8323DA00515B55 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D6071BE41B832CDF00515B55 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D6071BE51B832CF200515B55 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6071BC51B83115000515B55 /* my-hood-devslopes */ = {
+		D6071BC51B83115000515B55 /* my-hood-spaceghost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6071BD81B83115000515B55 /* Build configuration list for PBXNativeTarget "my-hood-devslopes" */;
+			buildConfigurationList = D6071BD81B83115000515B55 /* Build configuration list for PBXNativeTarget "my-hood-spaceghost" */;
 			buildPhases = (
 				D6071BC21B83115000515B55 /* Sources */,
 				D6071BC31B83115000515B55 /* Frameworks */,
@@ -79,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = "my-hood-devslopes";
+			name = "my-hood-spaceghost";
 			productName = "my-hood-devslopes";
-			productReference = D6071BC61B83115000515B55 /* my-hood-devslopes.app */;
+			productReference = D6071BC61B83115000515B55 /* my-hood-spaceghost.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6071BC11B83115000515B55 /* Build configuration list for PBXProject "my-hood-devslopes" */;
+			buildConfigurationList = D6071BC11B83115000515B55 /* Build configuration list for PBXProject "my-hood-spaceghost" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6071BC51B83115000515B55 /* my-hood-devslopes */,
+				D6071BC51B83115000515B55 /* my-hood-spaceghost */,
 			);
 		};
 /* End PBXProject section */
@@ -134,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6071BDD1B8311BC00515B55 /* Post.swift in Sources */,
 				D6071BCC1B83115000515B55 /* ViewController.swift in Sources */,
+				D6071BE31B8323DA00515B55 /* AddPostVC.swift in Sources */,
+				D6071BE61B832CF200515B55 /* DataService.swift in Sources */,
 				D6071BCA1B83115000515B55 /* AppDelegate.swift in Sources */,
+				D6071BE01B8317A000515B55 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +299,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-hood-devslopes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.my-hood-devslopes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceghost.my-hood";
+				PRODUCT_NAME = "my-hood-spaceghost";
 			};
 			name = Debug;
 		};
@@ -261,15 +310,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-hood-devslopes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.my-hood-devslopes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceghost.my-hood";
+				PRODUCT_NAME = "my-hood-spaceghost";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6071BC11B83115000515B55 /* Build configuration list for PBXProject "my-hood-devslopes" */ = {
+		D6071BC11B83115000515B55 /* Build configuration list for PBXProject "my-hood-spaceghost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6071BD61B83115000515B55 /* Debug */,
@@ -278,13 +327,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6071BD81B83115000515B55 /* Build configuration list for PBXNativeTarget "my-hood-devslopes" */ = {
+		D6071BD81B83115000515B55 /* Build configuration list for PBXNativeTarget "my-hood-spaceghost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6071BD91B83115000515B55 /* Debug */,
 				D6071BDA1B83115000515B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

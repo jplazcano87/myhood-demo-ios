@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:my-hood-devslopes.xcodeproj">
+      location = "self:/Users/spaceghost-mac/Downloads/my-hood-devslopes/my-hood-spaceghost.xcodeproj">
    </FileRef>
 </Workspace>
